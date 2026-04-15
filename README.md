@@ -6,14 +6,25 @@ This project analyzes a retail dataset to uncover insights into sales performanc
 The goal was to simulate real world business analysis by answering key questions using structured queries.
 
 📁 Dataset
+
+
 Superstore dataset from Kaggle
+
+
 Contains sales transactions including customers, regions, products, and profits
 
 🛠 Tools Used
+
+
 MySQL
+
+
 SQL (Aggregations, Grouping, Subqueries)
 
+
 ❓ Business Questions
+
+
 What is the total sales of the business?
 Which regions generate the most revenue?
 Who are the top customers?
