@@ -93,7 +93,7 @@ ORDER BY month;
 
 🔹Most selling category
 
-select category, sum(sales) as total_Sales
+select category, ROUND(SUM(sales),2) as total_Sales
 
 from storedata
 
