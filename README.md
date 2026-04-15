@@ -7,9 +7,8 @@ The goal was to simulate real world business analysis by answering key questions
 
 📁 Dataset
 
-Superstore dataset from Kaggle
-
-Contains sales transactions including customers, regions, products, and profits
+Superstore dataset from Kaggle.
+Contains sales transactions including customers, regions, products, and profits.
 
 🛠 Tools Used
 
@@ -83,9 +82,7 @@ limit 5;
 
 🔹Monthly Sales Trend
 
-SELECT DATE_FORMAT(STR_TO_DATE(`Order Date`, '%m/%d/%Y'), '%Y-%m') AS month,
-
-       ROUND(SUM(`Sales`),2) AS total_sales
+SELECT DATE_FORMAT(STR_TO_DATE(`Order Date`, '%m/%d/%Y'), '%Y-%m') AS month, ROUND(SUM(`Sales`),2) AS total_sales
 
 FROM storedata
 
@@ -111,11 +108,11 @@ SELECT ROUND(AVG(order_total),2) AS average_sales_per_order
 
 FROM (
 
-    SELECT `Order ID`, SUM(`Sales`) AS order_total
+SELECT `Order ID`, SUM(`Sales`) AS order_total
     
-    FROM storedata
+FROM storedata
     
-    GROUP BY `Order ID`
+GROUP BY `Order ID`
 
 ) AS order_totals;
 
